@@ -1,0 +1,28 @@
+*,
+*::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Overpass", sans-serif;
+  background-color: $very-dark-blue;
+}
+
+body {
+  width: 100%;
+  max-width: 90rem;
+  height: 100vh;
+  max-width: 50rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}

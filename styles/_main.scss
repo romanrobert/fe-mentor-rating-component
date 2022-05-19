@@ -1,0 +1,148 @@
+.rating-card {
+  width: 26.125rem;
+  height: 26.125rem;
+  border-radius: 1.25rem;
+  background-color: $dark-blue;
+}
+
+.rating-card__content {
+  max-width: 85%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  h1 {
+    font-size: 1.75rem;
+    font-weight: $fw-bold;
+    color: $white;
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: $medium-grey;
+    max-width: 55ch;
+  }
+}
+
+.content__star {
+  background-color: #323f4c;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+.content__rating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.rating__item {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #323f4c;
+  color: $medium-grey;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  &:hover {
+    background-color: $light-grey;
+    color: $white;
+  }
+}
+
+.rating__item--active {
+  background-color: $orange;
+  color: $white;
+}
+
+.content__button {
+  height: 2.8125rem;
+  width: 100%;
+  border-radius: 1.375rem;
+  border: none;
+  background-color: $orange;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-top: 2rem;
+  transition: all 300ms ease;
+  font-weight: $fw-bold;
+  cursor: pointer;
+  &:hover {
+    color: $orange;
+    background-color: $white;
+  }
+}
+
+.ty-card {
+  display: none;
+  width: 26.125rem;
+  height: 26.125rem;
+  border-radius: 1.25rem;
+  background-color: $dark-blue;
+}
+
+.ty-card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    text-align: center;
+    width: 35ch;
+    color: $light-grey;
+  }
+}
+
+.rating {
+  color: $orange !important;
+  background-color: #323f4c;
+  border-radius: 20px;
+  max-width: 192px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 427px) {
+  .rating-card {
+    width: 100%;
+    margin: auto;
+    max-width: 328px;
+    height: auto;
+    padding-bottom: 2.5rem;
+  }
+
+  .ty-card {
+    width: 100%;
+    margin: auto;
+    max-width: 328px;
+
+    padding-bottom: 2.5rem;
+  }
+
+  .ty-card__content {
+    max-width: 90%;
+    margin: auto;
+    p {
+      max-width: 95%;
+    }
+  }
+}
